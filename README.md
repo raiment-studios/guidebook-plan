@@ -16,7 +16,7 @@ TODO: still working on this!
 # Installation
 cargo install --git https://github.com/raiment-studios/guidebook-plan
 
-# Initilization (run once per computer)
+# Initialization (run once per computer)
 guidebook-plan init
 
 # Show the current plan
