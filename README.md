@@ -88,6 +88,18 @@ what you _said_ you'd be working on at any given moment.
 
 </details>
 
+<details>
+    <summary><strong>What's the deal with the git stuff?</strong></summary>
+<br/>
+
+A key design principle behind guidebook is that users should have full ownership and control over their data. C
+
+By storing all its data locally, `guidebook-plan` always allows users to go directly to their data directory (`~/.local/share/guidebook`) to modify it directly. It's fully possible to write custom scripts or whatever is necessary on those files.
+
+Using `git` also means that revision history, remote backup, syncing between different machines, forking, and other git functionality is implicitly available when using `guidebook-plan`.
+
+</details>
+
 ## License
 
 See [LICENSE](LICENSE).
