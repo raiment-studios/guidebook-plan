@@ -81,6 +81,7 @@ The original prototype for `guidebook-plan` was written in TypeScript around Jul
 <details>
     <summary><strong>Who is this for?</strong></summary>
 <br/>
+
 People who like time boxing & daily routines and also work in the
 terminal frequently. It helps you stay on track by letting you know
 what you _said_ you'd be working on at any given moment.
