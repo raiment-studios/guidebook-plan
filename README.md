@@ -1,6 +1,6 @@
 # 🍁 guidebook-plan
 
-A simple command-line utility to keep on track with your daily routine.
+A command-line utility to help keep on track with your daily routine.
 
 ## Status
 
@@ -16,7 +16,7 @@ TODO: still working on this!
 # Installation
 cargo install --git https://github.com/raiment-studios/guidebook-plan
 
-# Initlaization (run once)
+# Initilization (run once per computer)
 guidebook-plan init
 
 # Show the current plan
