@@ -24,7 +24,7 @@ cargo install --git https://github.com/raiment-studios/guidebook-plan
 guidebook-plan init
 ```
 
-**View the routine**: the main command is `guidebook-plan show` which shows where you should be in your daily routine based on the current day and time. This is the default command so running `guidebook-plan` alone will suffice:
+**View the routine**: the main command is `guidebook-plan show` which shows where you should be in your daily routine based on the current day and time. This is the default command so running `guidebook-plan` alone will suffice (note if you use this a lot, creating a local `plan` shell alias may make sense!):
 
 ```bash
 guidebook-plan

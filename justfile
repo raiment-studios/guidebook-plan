@@ -3,9 +3,11 @@
 default:
     @just --list --unsorted
 
-run:
-    cargo build
-    ./target/debug/guidebook-plan
+dev:
+    cargo run
+
+run +args="show":
+    cargo run --release -- {{args}}
 
 publish:
     ./scripts/publish.sh
