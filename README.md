@@ -2,35 +2,45 @@
 
 A command-line utility to help keep on track with your daily routine.
 
+Designed for people who like time-boxing, daily routines, and work in the terminal on daily basis.
+
 ## Status
 
 Early prototype. It's **functional but a little rough around the edges**. The code needs a fair amount of clean-up and the user experience could use some attention.
 
-## Quick start
+## Installation
 
-TODO: still working on this!
-
-**Requirements**: [Rust](https://rustup.rs/) must be installed to use `cargo`
+**Requires**: [Rust](https://rustup.rs/) to be installed for installation.
 
 ```bash
-# Installation
 cargo install --git https://github.com/raiment-studios/guidebook-plan
+```
 
-# Initialization (run once per computer)
+## Usage
+
+**Initialization**: on your first use, run `guidebook-plan init` to initialize the local and/or remote data directory. This only has to be run once per computer.
+
+```bash
 guidebook-plan init
+```
 
-# Show the current plan
+**View the routine**: the main command is `guidebook-plan show` which shows where you should be in your daily routine based on the current day and time. This is the default command so running `guidebook-plan` alone will suffice:
+
+```bash
 guidebook-plan
+```
 
-# Edit the plan
-#
-# TODO: editing the plan currently requires manual modification of the
-# plan YAML file. The format is not yet documented beyond what's in the
-# source code! That's why this is still a prototype!!
+**Edit the routine**: HEADS UP! This is why this is still a prototype! There's an `guidebook-plan open` command which is hardcoded to open the underlying routine file in [Visual Studio Code](https://code.visualstudio.com/). The plan file format is not complex but it also is not yet documented beyond looking at the source code.
+
+```bash
 guidebook-plan open
 ```
 
 ## Development
+
+### Contributing
+
+I'd be shocked if anyone other than me looks at this repo! Let's start from there!
 
 ### Roadmap
 
@@ -38,14 +48,17 @@ guidebook-plan open
 
 -   [ ] Allow different routines on weekends
 -   [ ] Improved edit/update workflow
+-   [ ] Add versioning to plan format
+-   [ ] Import initial routine from GitHub repo templates
+-   [ ] Bidirectional code sync on the monorepo publish script
 
 #### v0.2-prototype
 
 -   [x] Convert TypeScript prototype to Rust
 -   [x] GitHub login on `init`
 -   [ ] Remove hard-coded VS Code reference in `open` command
--   [ ] One-liner installation for users
--   [ ] Provide documentation on the plan format
+-   [x] One-liner installation for users
+-   [ ] Provide initial documentation on the plan format
 -   [ ] Add helpful screenshots to the README
 -   [ ] Design clean-up on the extravagent color usage
 -   [ ] Rename `open` -> `edit`
@@ -55,10 +68,25 @@ guidebook-plan open
 -   [x] Minimal TypeScript prototype to test usefulness
 -   [x] Sub-command to clone remote repo
 
-#### Backlog (aka someday)
+#### Backlog (aka maybe-someday features)
 
 -   [ ] Mobile & web support
 
 ### History
 
 The original prototype for `guidebook-plan` was written in TypeScript around July 2025. Once the prototype proved to be sufficiently useful, it was ported to Rust using Claude Sonnet 4 to automate the initial conversion, which was then manually edited to sanitize the code.
+
+## FAQ
+
+<details>
+    <summary>Who is this for?</summary>
+
+    People who like time boxing & daily routines and also work in the
+    terminal frequently. It helps you stay on track by letting you know
+    what you _said_ you'd be working on at any given moment.
+
+</details>
+
+## License
+
+See [LICENSE](LICENSE).
